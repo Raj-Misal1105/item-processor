@@ -122,4 +122,4 @@ PRECONDITION_FAILED - inequivalent arg 'x-queue-type'
 
 Make sure `queue_arguments={'x-queue-type': 'quorum'}` is present in `worker.py` and `arguments={'x-queue-type': 'quorum'}` is present in `producer.py`.
 
-If you are on RabbitMQ 3.x, remove these arguments — classic queues will work fine.
+If you are on RabbitMQ 3.x, quorum queues will still work — no changes needed.
