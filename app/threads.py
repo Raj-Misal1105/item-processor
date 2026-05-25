@@ -6,7 +6,6 @@ import time
 threads_bp = Blueprint('threads', __name__)
 
 def make_request(url: str, results: list, index: int):
-    """Single GET request karo aur result store karo"""
     try:
         response = requests.get(url, timeout=60)
         results[index] = {
